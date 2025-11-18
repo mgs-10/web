@@ -1,0 +1,319 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.divbar {
+    
+    position: absolute;
+    top: 0px;
+    /*background: -webkit-linear-gradient(top, rgba(230, 230, 230, 1), rgba(200, 200, 200, 1));*/
+    height: 16%;
+    width: 100%;
+    
+}
+
+.icono1 {
+    
+    position: relative;
+    width: 98%;
+    height: 100%;
+    left: 2%;
+    top: 1%;
+    background-image: url(../../img/Logo_CDMX2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.icono2 {
+    position: absolute;
+    width: 330px;
+    height: 90px;
+    right: 0px;
+    top: 1%;
+    background-image: url(../../img/unnamed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* position: absolute;
+    width: 330px;
+    height: 90px;
+    right: 0px;
+    top: 18%;
+    background-size: cover;
+    color: white;
+    font-size: 140%;
+    font-weight: bold; */
+    
+}
+
+.contenedor {
+    
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    height: 84%;
+    overflow-y: auto;
+    
+}
+/**DRAW OF TABLE**/
+
+/*table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}*/
+
+/*td{
+	padding: 20px;
+}*/
+
+table thead{
+	background-color: #246355;
+	/*border-bottom: solid 5px #0F362D;*/
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+/*td:hover td{
+	background-color: #2A5D50;
+	color: white;
+}
+************/
+
+
+.contenedor menu_gestor {
+position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 8%;
+    
+}
+
+.boton_menu_gestor {
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+    display: block;
+    background: -webkit-linear-gradient(top, rgba(171, 141, 93, 1), rgba(171, 141, 93, 1));
+    border: 0px;
+    float: left;
+    width: 20%;
+    height: 8%;
+    color: white;
+    
+}
+
+.boton_menu_gestor:hover {
+    
+    background: -webkit-linear-gradient(top, rgba(42, 93, 80, 1), rgba(42, 93, 80, 1));
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.pool_s_abiertos {
+    
+    position: absolute;
+    width: 80%;
+    height: 46%;
+    top: 8%;
+    overflow-y: auto;
+    padding: 8px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+/*.pool_s_abiertos table {
+    
+    width: 100%;
+    
+}*/
+
+.pool_s_abiertos tr th{
+    
+    text-align: center;
+    font-size: 14px;
+    padding: 0px;
+    border-color: black;
+    
+}
+
+.lista_tecnicos {
+    
+    position: absolute;
+    right: 0%;
+    width: 20%;
+    height: 92%;
+    top: 8%;
+    right: 0%;
+    
+}
+
+.lista_tecnicos table {
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.lista_tecnicos table tr td {
+    
+    text-align: center;
+    font-size: 14px;
+    color: #2A5D50;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+  
+    
+}
+
+.pool_s_asignados {
+    
+    position: absolute;
+    width: 80%;
+    height: 46%;
+    top: 54%;
+    overflow-y: auto;
+    padding: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+.pool_s_asignados table {
+    width: 100%;
+}
+
+.pool_s_asignados tr th{
+    
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+   border-color: black;
+   
+    
+}
+
+tr td input {
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(171, 141, 93 , 1), rgba(171, 141, 93 , 1));
+    margin: 0px;
+    padding: 0px;
+    border-width: 2px;
+    border-color: black;
+    font-weight: bold;
+    
+}
+
+tr td input:hover {
+    
+    background: -webkit-linear-gradient(top, rgba(42, 93, 80 , 1), rgba(42, 93, 80, 1));
+    
+}
+
+tr td select {
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: #2A5D50;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(171, 141, 93 , .8), rgba(171, 141, 93 , .8));
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-color: black;
+    
+}
+
+@media (max-width: 1200px) {
+  
+    .icono2 {
+        
+        visibility: hidden;
+        color: white;
+        
+    }
+    
+    .menu_gesor {
+        
+        visibility: hidden;
+        
+    }
+    
+    .boton_menu_gestor {
+        
+        visibility: hidden;
+        
+    }
+    
+    .lista_tecnicos {
+        
+        visibility: hidden;
+        
+    }
+    
+    .pool_s_abiertos {
+        
+        width: 100%;
+        height: 42%;
+        top: 16%;
+        
+    }
+    
+    .pool_s_abiertos tr td{
+        
+        font-size: 10px;
+        
+    }
+    
+    .pool_s_asignados {
+        
+        width: 100%;
+        height: 42%;
+        top: 58%;
+        
+    }
+    
+    .pool_s_asignados tr td{
+        
+        font-size: 10px;
+        
+    }
+    
+}
+
+.boton_menu_gestor.salir-boton {
+    color: #ffffff; /* Color inicial del texto */
+    background-color: #dc3545; /* Color de fondo inicial */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton_menu_gestor.salir-boton:hover {
+    color: #ffffff; /* Color del texto al pasar el mouse */
+    background-color: #ff0000; /* Color de fondo al pasar el mouse */
+}

@@ -1,0 +1,232 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.divbar {
+    
+    position: absolute;
+    top: 0px;
+    /* background: -webkit-linear-gradient(top, rgba(230, 230, 230, 1), rgba(200, 200, 200, 1)); */
+    height: 16%;
+    width: 100%;
+    
+}
+
+.icono1 {
+    position: relative;
+    width: 98%;
+    height: 100%;
+    left: 2%;
+    top: 1%;
+    background-image: url(../../img/Logo_CDMX2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icono2 {
+    
+    position: absolute;
+    width: 330px;
+    height: 90px;
+    right: 0px;
+    top: 1%;
+    background-image: url(../../img/unnamed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.contenedor {
+    
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    height: 78%;
+    padding: 10px;
+    overflow-y: auto;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.contenedor table {
+    width: 100%;
+}
+
+.contenedor tr td{
+    
+    text-align: left;
+    font-size: 14px;
+    color: black;
+    padding: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    
+}
+
+tr td input {
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+    display: block;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1));
+    border: 0px;
+    margin-bottom: 4px;
+    margin-top: 6px;
+    font-weight: bold;
+    
+}
+
+tr td input:hover {
+    background: -webkit-linear-gradient(top, rgba(102, 0, 0, 1), rgba(180, 0, 0, 1));
+    /*color: yellowgreen;*/
+    font-weight: bold;
+}
+
+.edit_f_table tr td{
+    
+    width: 25%;
+    height: 20px;
+    text-align: left;
+    padding: 4px;
+    
+}
+
+.edit_f_table tr td select{
+    
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(173, 255, 47, 1), rgba(0, 230, 0, 1));
+    margin: 0px;
+    padding: 0px;
+    border-width: 2px;
+    border-color: black;
+    
+}
+
+.box_text_solution input{
+    
+    font-size: 18px;
+    background: -webkit-linear-gradient(top, rgba(173, 255, 47, 1), rgba(0, 230, 0, 1));
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    
+}
+
+.box_text_solution input:hover {
+    
+    background: -webkit-linear-gradient(top, rgba(223, 255, 97, 1), rgba(50, 255, 50, 1));
+    color: white;
+    
+}
+
+.enviar {
+    
+    background-color: white;
+    padding: 4px;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+.enviar:hover {
+    
+    background: -webkit-linear-gradient(top, rgba(100, 100, 100, 1), rgba(0, 0, 0, 1));
+    color: red;
+    
+}
+
+.pie {
+    
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 6%;
+    background-color: red;
+    
+}
+
+.pie a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 6px;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1));
+    border: 0px;
+    font-weight: bold;
+}
+
+.pie a:hover {
+    background: -webkit-linear-gradient(top, rgba(102, 0, 0, 1), rgba(180, 0, 0, 1));
+    color: white;
+    font-weight: bold;
+}
+
+.pie input {
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1));
+    border: 0px;
+    font-weight: bold;
+}
+
+.pie input:hover {
+    
+    background: -webkit-linear-gradient(top, rgba(102, 0, 0, 1), rgba(180, 0, 0, 1));
+    color: white;
+    
+}
+
+@media (max-width: 1200px) {
+    .icono2 {
+        
+        visibility: hidden;
+        color: white;
+        
+    }
+    
+    .menu_gestor {
+        
+        visibility: hidden;
+        
+    }
+    
+    .boton_menu_gestor {
+        
+        visibility: hidden;
+        
+    }
+    
+    
+}
+
