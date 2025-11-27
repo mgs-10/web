@@ -68,7 +68,7 @@ pipeline {
                         echo "Ejecutando tests con PHPUnit..."
                         
                         # 🔹 Usar docker-compose para tests con base de datos
-                        docker-compose -f docker-compose.test.yml up --abort-on-container-exit --exit-code-from app
+                        docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
                         
                         # 🔹 El comando anterior termina con exit code 0 si tests pasan, 1 si fallan
                     else
