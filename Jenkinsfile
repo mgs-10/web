@@ -16,7 +16,7 @@ pipeline {
         KUBE_CONFIG = credentials('kubeconfig')
         
         // 🔹 Credenciales para Docker (acceder a usuario y password por separado)
-        DOCKER_CREDS = credentials('dockerhub-credenciales')
+        DOCKER_CREDS = credentials('dockerhub-credentials')
     }
 
     // 🔹 ETAPAS DEL PIPELINE - Secuencia de ejecución
