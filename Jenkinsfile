@@ -10,7 +10,7 @@ pipeline {
         
         // 🔹 Nombre completo de tu imagen Docker
         // Formato: ghcr.io/usuario/repo
-        IMAGE_NAME = "${REGISTRY}/MGS-10/web"
+        IMAGE_NAME = "${REGISTRY}/mgs-10/web"
         
         // 🔹 Configuración de Kubernetes (credencial segura)
         KUBE_CONFIG = credentials('kubeconfig')
@@ -30,7 +30,7 @@ pipeline {
                 // 🔹 Clona el repositorio de GitHub
                 git(
                     branch: 'main',                                    // 🔹 Rama a clonar
-                    url: 'https://github.com/MGS-10/web.git', // 🔹 URL de tu repo
+                    url: 'https://github.com/mgs-10/web.git', // 🔹 URL de tu repo
                     credentialsId: 'GITHUB-token'                      // 🔹 Usa el token para autenticar
                 )
                 
