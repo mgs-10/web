@@ -21,7 +21,7 @@ RUN a2enmod rewrite
 
 # 🔹 Informa que el contenedor escucha en el puerto 80
 # Esto es solo documentación, no abre el puerto
-EXPOSE 80
+EXPOSE 8080
 
 # 🔹 Verifica automáticamente si la aplicación está sana
 # --interval=30s: Verifica cada 30 segundos
