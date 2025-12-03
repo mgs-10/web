@@ -104,7 +104,7 @@ pipeline {
                 
                 script {
                     // 🔹 Login al registry de GitHub Packages
-                    docker.withRegistry("https://${REGISTRY}", "dockerhub-credentials") {
+                    docker.withRegistry("https://${REGISTRY}", 'dockerhub-credentials') {
                         // 🔹 Sube la imagen al registry
                         dockerImage.push()
                         
