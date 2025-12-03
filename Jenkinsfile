@@ -104,7 +104,7 @@ pipeline {
                 
                 script {
                     // 🔹 Login al registry de GitHub Packages
-                    docker.withRegistry("https://${REGISTRY}", 'github-token') {
+                    docker.withRegistry("https://${REGISTRY}", "github-token") {
                         // 🔹 Sube la imagen al registry
                         dockerImage.push()
                         
